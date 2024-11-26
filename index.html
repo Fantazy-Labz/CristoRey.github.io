@@ -6,13 +6,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Fantazy Labz</title>
+  <title>Parroquia Cristo Rey</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/Logo-NSF.png" rel="icon">
-  <link href="assets/img/Logo-NSF.png" rel="apple-touch-icon">
+  <link href="logo.png" rel="icon">
+  <link href="logo.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -25,6 +25,12 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -34,85 +40,164 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+ <!-- Header -->
+ <header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+      <img src="lo2.jpg" alt="">
+    </a>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active">Inicio</a></li>
+        <li><a href="#about">Servicios</a></li>
+        <li><a href="#services">Grupos Parroquiales</a></li>
+        <li><a href="#portfolio">Celebraciones Eucristicas</a></li>
+        <li><a href="#contact">Contáctanos</a></li>
+      </ul>
+    </nav>
+   
+  </div>
+</header>
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-       <img src="assets/img/Imagen_de_WhatsApp_2024-07-30_a_las_13.05.41_b6f3d2a2-removebg-preview.png" alt="" ;"> 
-  
-      </a>
+<style>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Inicio<br></a></li>
-          <li><a href="#about">Nuestra Empresa</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#portfolio">Portafolio</a></li>
-          
-          <li><a href="#contact">Contactanos</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+  body {
+    font-family: 'Itim';font-size: 22px;
+    background-color: #E8E8E8;
+}
+  .header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    
+    width: 100%;
+    z-index: 1000;
+    
+  }
 
-      <a class="btn-getstarted" href="index.html#contact">Comienza Ahora</a>
+  .header.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 
-    </div>
-  </header>
+  .header .logo img {
+    height: 100px;
+    margin-right: 10px;
+  }
 
-  <main class="main">
+  .header .navmenu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+  .header .navmenu ul li {
+    margin: 0 15px;
+  }
 
-      <img src="assets/img/hero-bg.jpg" alt="" >
+  .header .navmenu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
 
-      <div class="container">
+  .header .navmenu ul li a:hover,
+  .header .navmenu ul li a.active {
+    color: #f9c74f;
+  }
 
-        <div class="row justify-content-center text-center"  data-aos-delay="50">
-          <div class="col-xl-6 col-lg-8">
-            <h2>
-              "Innovación en cada linea de código<span>.</span>"</h2>
-            <p>Vanguardia en la transformación digital</p>
-          </div>
+
+  /* Swiper */
+  .swiper-container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .swiper-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .swiper-slide h2 {
+    color: #fff;
+    font-size: 3rem; /* Más grande para destacar */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    padding: 0 20px; /* Margen interno para evitar que el texto quede pegado */
+    line-height: 1.4; /* Mejor espacio entre líneas */
+    max-width: 90%; /* Limitar el ancho del texto */
+  }
+
+  @media (min-width: 768px) {
+    .swiper-slide h2 {
+      font-size: 4rem; /* Ajuste para pantallas más grandes */
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 20px !important;
+  }
+</style>
+
+<main class="main">
+  <!-- Hero Section -->
+  <section id="hero" class="hero section dark-background">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img src="catequetica.jpg" alt="">
+          <h2>“No solo de pan vivirá el hombre, sino de toda palabra que sale de la boca de Dios.” Mateo 4:4</h2>
         </div>
-
-        <div class="row gy-4 mt-5 justify-content-center" data-aos-delay="50">
-          <div class="col-xl-2 col-md-4" data-aos-delay="50">
-            <div class="icon-box">
-              <i class="bi bi-binoculars"></i>
-              <h3><a href="">Innovación</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos-delay="50">
-            <div class="icon-box">
-              <i class="bi bi-bullseye"></i>
-              <h3><a href="">Calidad</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4"  data-aos-delay="50">
-            <div class="icon-box">
-              <i class="bi bi-fullscreen-exit"></i>
-              <h3><a href="">Compromiso</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4"  data-aos-delay="50">
-            <div class="icon-box">
-              <i class="bi bi-card-list"></i>
-              <h3><a href="">Integridad</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4"  data-aos-delay="50">
-            <div class="icon-box">
-              <i class="bi bi-gem"></i>
-              <h3><a href="">Colaboración</a></h3>
-            </div>
-          </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img src="eucaristia.jpg" alt="">
+          <h2>“El Señor es mi pastor, nada me faltará.” Salmo 23:1</h2>
         </div>
-
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <img src="familiar.jpg" alt="">
+          <h2>“Confía en el Señor de todo corazón y no te apoyes en tu propia inteligencia.” Proverbios 3:5</h2>
+        </div>
       </div>
+      <!-- Puntos de navegación -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+</main>
 
-    </section><!-- /Hero Section -->
+<!-- Scripts -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+    });
+  });
+</script>
+
+
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -121,20 +206,19 @@
 
         <div class="row gy-4">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/Fantazy Labz desarollo de aplicaciones.jpg" class="img-fluid" alt="">
+            <img src="liturgica.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 order-2 order-lg-1 content">
-            <h3>NUESTRA EMPRESA</h3>
+            <h3>NUESTRA PARROQUIA</h3>
             <p class="fst-italic">
-              Fantazylabz es tu socio principal en consultoría de software. Nuestro equipo experto, soluciones innovadoras y enfoque centrado en el cliente simplifican las complejidades tecnológicas. Destacamos por nuestro historial comprobado, adaptabilidad y compromiso con el empoderamiento. Elige a Fantazylabz para navegar con éxito en el cambiante mundo tecnológico.
+            La Parroquia de Cristo Rey es un templo con una historia significativa, erigido oficialmente el 21 de noviembre de 1998 mediante decreto del Sr. Arzobispo Adolfo Cardenal Suárez Rivera (+). Este importante acontecimiento marcó el inicio de una nueva comunidad de fe en la región, fortaleciendo la presencia de la Iglesia Católica en el área.
 
+Esta parroquia forma parte del Decanato de Nuestra Señora de la Soledad, el cual pertenece a la Zona Pastoral VIII. Dentro de este contexto, la parroquia no solo actúa como un espacio de culto y oración, sino también como un punto de encuentro para la comunidad, ofreciendo servicios pastorales, celebraciones litúrgicas y programas de formación religiosa.
+
+Con el paso de los años, la Parroquia de Cristo Rey se ha convertido en un referente espiritual en la zona, atendiendo las necesidades de los fieles y promoviendo valores cristianos en sus actividades y servicios. Su arquitectura y diseño reflejan la dedicación de quienes la construyeron, consolidándola como un lugar especial para la reflexión y el fortalecimiento de la fe.
 
             </p>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Equipo Altamente Capacitado: Nuestros consultores, expertos en diversas tecnologías y metodologías, gestionan cada proyecto con la máxima competencia.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Soluciones Innovadoras: Ofrecemos soluciones tecnológicas avanzadas y personalizadas para cada cliente, usando las últimas herramientas y técnicas del sector.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Adaptabilidad: Nos ajustamos rápidamente a los cambios tecnológicos y necesidades del mercado, garantizando soluciones siempre relevantes y efectivas.</span></li>
-            </ul>
+            
             
           </div>
         </div>
@@ -143,403 +227,235 @@
 
     </section><!-- /About Section -->
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section">
 
-      <div class="container"  data-aos-delay="50">
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/lenguajes/python-programming-language.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/lenguajes/download.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/lenguajes/rails.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/lenguajes/flutter.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/lenguajes/java.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/lenguajes/mysql.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/lenguajes/html.png.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/lenguajes/css.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Clients Section -->
-
-    <!-- Features Section -->
-    <section id="features" class="features section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-          <div class="features-image col-lg-6"  data-aos-delay="100"><img src="assets/img/Empresa-FantazyLabz-Consultoria de software en Monterrey.jpg" alt=""></div>
-          <div class="col-lg-6">
-
-            <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0"  data-aos-delay="50">
-              <i class="bi bi-archive flex-shrink-0"></i>
-              <div>
-                <h4>Innovación Continua</h4>
-                <p>Comprometidos con la investigación y el desarrollo para ofrecer soluciones tecnológicas avanzadas.</p>
-              </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3"  data-aos-delay="50">
-              <i class="bi bi-basket flex-shrink-0"></i>
-              <div>
-                <h4>Soluciones Personalizadas</h4>
-                <p>Adaptamos nuestras soluciones a las necesidades específicas de cada cliente.</p>
-              </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3"  data-aos-delay="50">
-              <i class="bi bi-broadcast flex-shrink-0"></i>
-              <div>
-                <h4>Experiencia y Profesionalismo</h4>
-                <p>Consultores altamente capacitados que manejan cada proyecto con el máximo nivel de competencia.</p>
-              </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3"  data-aos-delay="50">
-              <i class="bi bi-camera-reels flex-shrink-0"></i>
-              <div>
-                <h4>Compromiso con el Cliente</h4>
-                <p>Dedicados a construir relaciones basadas en la confianza y ofrecer un servicio excepcional.
-
-                </p>
-              </div>
-            </div><!-- End Features Item-->
-
+    <style>
+      .pastoral-card {
+        position: relative;
+        overflow: hidden;
+     
+        border-radius: 10px;
+      }
+    
+      .pastoral-card img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+      }
+    
+      .pastoral-card:hover img {
+        transform: scale(1.1);
+      }
+    
+      /* Nombre inicial siempre visible */
+      .pastoral-card .title {
+        font-family: 'Itim';
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        z-index: 1;
+      }
+    
+      /* Información mostrada al hacer hover */
+      .pastoral-card .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        text-align: center;
+        padding: 10px;
+      }
+    
+      .pastoral-card:hover .overlay {
+        opacity: 1;
+      }
+    
+      .pastoral-card .overlay p {
+        color: white;
+        font-size: 1rem;
+        font-family: 'Itim';
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+      }
+    </style>
+    
+    <div class="container my-5">
+      <div class="row g-4">
+        <!-- Fila 1: 2 tarjetas -->
+        <div class="col-md-6">
+          <div class="pastoral-card">
+            <img src="catequetica.jpg" alt="Pastoral Catequética">
+            <div class="title">Pastoral Catequética</div>
+            <div class="overlay">
+              <p>La pastoral catequética es una labor fundamental dentro de la comunidad cristiana que tiene como objetivo principal fomentar el crecimiento espiritual de los fieles a través de la enseñanza de la fe y la formación integral en los valores del Evangelio. Su propósito es guiar a las personas en el conocimiento profundo de la Palabra de Dios, los sacramentos, la doctrina y la vida cristiana para que puedan vivir una fe activa y comprometida.</p>
+            </div>
           </div>
         </div>
+        <div class="col-md-6">
+          <div class="pastoral-card">
+            <img src="liturgica.jpg" alt="Pastoral Litúrgica">
+            <div class="title">Pastoral Litúrgica</div>
+            <div class="overlay">
+              <p>La pastoral litúrgica tiene como misión principal animar, coordinar y dar vida a las celebraciones litúrgicas de la comunidad cristiana. Su propósito es lograr que cada celebración sea una experiencia viva de fe, en la que todos los miembros de la comunidad participen de manera activa, consciente y plena.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fila 2: 2 tarjetas -->
+        <div class="col-md-6">
+          <div class="pastoral-card">
+            <img src="parroquia 1.jpg" alt="Pastoral Social">
+            <div class="title">Pastoral Social</div>
+            <div class="overlay">
+              <p>La pastoral social tiene como misión fundamental ser la expresión concreta del amor cristiano hacia los más vulnerables, inspirada en el mandato evangélico de la solidaridad, la justicia y la caridad. Esta pastoral busca hacer presente el Reino de Dios a través de acciones solidarias que promuevan la dignidad de las personas, especialmente aquellas que viven en condiciones de pobreza, exclusión o sufrimiento.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pastoral-card">
+            <img src="familiar.jpg" alt="Pastoral Familiar">
+            <div class="title">Pastoral Familiar</div>
+            <div class="overlay">
+              <p>La promoción de valores cristianos y el fortalecimiento del núcleo familiar son esenciales en el contexto de los desafíos actuales, marcados por cambios culturales, económicos y sociales que afectan profundamente la vida cotidiana. Esta misión está inspirada en el evangelio y busca construir familias sólidas que sirvan como base para una sociedad más justa y armoniosa.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fila 2: 2 tarjetas -->
+        <div class="col-md-6">
+          <div class="pastoral-card">
+            <img src="vocacional.jpg" alt="Pastoral Social">
+            <div class="title">Pastoral Vocacional</div>
+            <div class="overlay">
+              <p>La pastoral vocacional es la acción organizada de la Iglesia que busca promover, acompañar y discernir las vocaciones en todos sus estados de vida: sacerdocio, vida consagrada, matrimonio y vida laical. Su objetivo principal es ayudar a las personas a descubrir el llamado de Dios y responder a él con generosidad y compromiso, integrando su vocación en la misión de la comunidad eclesial.
 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pastoral-card">
+            <img src="juv.jpg" alt="Pastoral Familiar">
+            <div class="title">Pastoral Juvenil</div>
+            <div class="overlay">
+              <p>La pastoral vocacional es la acción de la Iglesia que tiene como finalidad fomentar, acompañar y discernir las vocaciones de cada persona en respuesta al llamado de Dios. Este servicio se orienta a todos los miembros de la comunidad cristiana, ayudándolos a descubrir y asumir su misión en la vida, ya sea en el sacerdocio, la vida consagrada, el matrimonio o la vida laical</p>
+            </div>
+          </div>
+        </div>
+        
+        </div>
       </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
 
-    </section><!-- /Features Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
 
-      <!-- Section Title -->
-      <div class="container section-title" >
-        <h2>Servicios</h2>
-        <p>Revisa nuestros servicios</p>
-      </div><!-- End Section Title -->
 
-      <div class="container">
+    <div class="container content-section">
+      <div class="row align-items-center">
+        <!-- Text Section -->
+        <div class="col-lg-6 col-md-12">
+          <h2 class="content-title">Grupos Parroquiales</h2>
+          <ul>
+            <li class="list-item">Adoración Nocturna</li>
+            <li class="list-item">Cáritas</li>
+            <li class="list-item">DEA</li>
+            <li class="list-item">Encuentros con Cristo</li>
+            <li class="list-item">Escuela de Pastoral</li>
+            <li class="list-item">Liturgia</li>
+            <li class="list-item">MCM</li>
+            <li class="list-item">Monaguillos</li>
+            <li class="list-item">Oficina – Tienda</li>
+            <li class="list-item">Pequeños Hermanos</li>
+            <li class="list-item">Siloé</li>
+          </ul>
+        </div>
+        <!-- Image Section -->
+        <div class="col-lg-6 col-md-12 content-image">
+          <img src="grupos.jpg" alt="Grupos Parroquiales">
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-        <div class="row gy-4">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .content-section {
+        
 
-          <div class="col-lg-4 col-md-6"  data-aos-delay="50">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="service-details-desarrolloweb.html" class="stretched-link">
-                <h3>Desarrollo Web</h3>
-              </a>
-              <p>Ofrecemos desarrollo web, diseño de sitios personalizados, aplicaciones escalables, optimización SEO, mantenimiento y e-commerce con pagos integrados, ayudando a las empresas a establecer una presencia en línea efectiva.</p>
-            </div>
-          </div><!-- End Service Item -->
+        padding: 40px 20px;
+      }
+      .content-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .list-item {
+        list-style: none;
+        padding: 5px 0;
+        font-size: 1.1rem;
+      }
+      .list-item::before {
+        content: '✓';
+        color: #6c757d;
+        margin-right: 10px;
+      }
+      .content-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    </style>
 
-          <div class="col-lg-4 col-md-6"  data-aos-delay="50">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="service-details-desarrolloapps.html" class="stretched-link">
-                <h3>Desarrollo de Aplicaciones</h3>
-              </a>
-              <p>Desarrollamos aplicaciones móviles con diseño intuitivo y optimización para iOS y Android. Ofrecen soporte continuo y soluciones personalizadas para mejorar la experiencia del usuario y fomentar la lealtad a la marca.</p>
-            </div>
-          </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6"  data-aos-delay="50">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="service-details-basedatos.html" class="stretched-link">
-                <h3>Gestion de Bases de Datos</h3>
-              </a>
-              <p>Ofrecemos gestión de bases de datos con diseño, implementación, optimización, seguridad y mantenimiento continuo, asegurando rendimiento eficiente y adaptado a las necesidades del cliente.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos-delay="50">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <h3>Diseño UI/UX</h3>
-              <p>Nos especializamos en diseño UI/UX, creando interfaces intuitivas y experiencias atractivas mediante investigación de usuarios, prototipos y pruebas de usabilidad, asegurando una interacción fluida y satisfactoria.</p>
-              <a href="service-details-disenouiux.html" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
           
 
-          <div class="col-lg-4 col-md-6" data-aos-delay="50">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="service-details-desarrollomvp.html" class="stretched-link">
-                <h3>Desarrollo de MVP`s</h3>
-              </a>
-              <p>Desarrollamos MVPs mediante metodologías ágiles, priorizando la validación temprana del mercado y la creación de soluciones escalables con características clave que permiten una retroalimentación rápida y efectiva para futuras mejoras.</p>
-              <a href="service-details-desarrollomvp.html" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6"  data-aos-delay="50">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Arquitectura de Software</h3>
-              </a>
-              <p>Diseñamos arquitecturas de software robustas y escalables, adaptadas a las necesidades específicas del cliente, asegurando alta disponibilidad, eficiencia en el rendimiento y facilidad de mantenimiento para soportar el crecimiento futuro de las aplicaciones.</p>
-              <a href="service-details-desarrolloarquitectura.html" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
+  <!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section dark-background">
+  <img src="misa.png" alt="" >
+  <div class="container">
+    <div class="row justify-content-center" data-aos="zoom-in" >
+      <!-- Columna 1 -->
+      <div class="col-md-6 text-center text-white">
+        <h4>Misa Diaria</h4>
+        <p>Lunes a Sábado 8:00 am y 7:00 pm.</p>
+        <p><i>* Los miércoles no hay misa de 7:00 pm.</i></p>
       </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <img src="assets/img/cta-bg.jpg" alt="">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Comienza tu Futuro Digital</h3>
-              <p>En el mundo actual, donde la tecnología avanza a pasos agigantados, dar el primer paso hacia la transformación digital puede marcar la diferencia entre el estancamiento y el éxito. Flabz está aquí para ayudarte a iniciar este viaje hacia el futuro, ofreciendo soluciones tecnológicas personalizadas que te posicionarán a la vanguardia de tu industria.</p>
-              <a class="cta-btn" href="#">Comienza Ahora</a>
-            </div>
-          </div>
-        </div>
+      <!-- Columna 2 -->
+      <div class="col-md-6 text-center text-white">
+        <h4>Misa Dominical</h4>
+        <p>8:00 am</p>
+        <p>10:00 am Con niños</p>
+        <p>12:00 pm Por el pueblo</p>
+        <p>7:00 pm Con jóvenes</p>
       </div>
+    </div>
+  </div>
+</section>
 
-    </section><!-- /Call To Action Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" >
-        <h2>Potafolio</h2>
-        <p>Revisa Nuestro Portafolio</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters"  data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Todos</li>
-            <li data-filter=".filter-app">Yamaha Rompoo</li>
-            <li data-filter=".filter-product">Bt-Remodeling</li>
-            <li data-filter=".filter-branding">Fyaceros</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container"  data-aos-delay="100">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="portafolio/FantazyLabz-PortafolioYamaha4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Yamaha Rompoo</h4>
-                <p>En colaboración con Yamaha, desarrollamos un catálogo personalizado para Rompoo, integrando un diseño innovador que resalta las características únicas de los productos.</p>
-                <a href="portafolio/FantazyLabz-PortafolioYamaha4.jpg" title="En colaboración con Yamaha, desarrollamos un catálogo personalizado para Rompoo, integrando un diseño innovador que resalta las características únicas de los productos." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://yamaha-rompoo.com/" title="En colaboración con Yamaha, desarrollamos un catálogo personalizado para Rompoo, integrando un diseño innovador que resalta las características únicas de los productos." class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="portafolio/FantazyLabz-PortafolioYamaha2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Yamaha Rompoo</h4>
-                <p>Nuestro equipo se encargó de adaptar el contenido a las necesidades específicas de Rompoo, asegurando que el catálogo reflejara la esencia de la marca y sus valores.</p>
-                <a href="portafolio/FantazyLabz-PortafolioYamaha2.jpg" title="Nuestro equipo se encargó de adaptar el contenido a las necesidades específicas de Rompoo, asegurando que el catálogo reflejara la esencia de la marca y sus valores." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://yamaha-rompoo.com/" title="Nuestro equipo se encargó de adaptar el contenido a las necesidades específicas de Rompoo, asegurando que el catálogo reflejara la esencia de la marca y sus valores." class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="portafolio/FantazyLabz-PortafolioYamaha3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Yamaha Rompoo</h4>
-                <p>Utilizamos herramientas de diseño avanzadas para crear una experiencia visual atractiva y funcional, facilitando la navegación y la consulta de los productos.</p>
-                <a href="portafolio/FantazyLabz-PortafolioYamaha3.jpg" title="Utilizamos herramientas de diseño avanzadas para crear una experiencia visual atractiva y funcional, facilitando la navegación y la consulta de los productos." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://yamaha-rompoo.com/" title="Nuestro equipo se encargó de adaptar el contenido a las necesidades específicas de Rompoo, asegurando que el catálogo reflejara la esencia de la marca y sus valores." class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="portafolio/FantazyLabz-PortafolioBT1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>BT-Remodeling</h4>
-                <p>Colaboramos con BT Remodeling para crear un portafolio visualmente impactante que muestra la diversidad y calidad de sus servicios de renovación.</p>
-                <a href="portafolio/FantazyLabz-PortafolioBT1.jpg" title="Colaboramos con BT Remodeling para crear un portafolio visualmente impactante que muestra la diversidad y calidad de sus servicios de renovación." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://bt-remodeling.com/" title="Colaboramos con BT Remodeling para crear un portafolio visualmente impactante que muestra la diversidad y calidad de sus servicios de renovación." class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="portafolio/FantazyLabz-PortafolioBT2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>BT-Remodeling</h4>
-                <p>El proyecto incluyó el diseño de materiales personalizados que destacan proyectos anteriores y el proceso de transformación, reflejando el profesionalismo de BT Remodeling.</p>
-                <a href="portafolio/FantazyLabz-PortafolioBT2.jpg" title="El proyecto incluyó el diseño de materiales personalizados que destacan proyectos anteriores y el proceso de transformación, reflejando el profesionalismo de BT Remodeling." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://bt-remodeling.com/" title="El proyecto incluyó el diseño de materiales personalizados que destacan proyectos anteriores y el proceso de transformación, reflejando el profesionalismo de BT Remodeling." class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="portafolio/FantazyLabz-PortafolioBT3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>BT-Remodeling</h4>
-                <p>El resultado final es un portafolio que no solo resalta los logros de BT Remodeling, sino que también facilita la presentación de sus proyectos a futuros clientes con un impacto duradero.</p>
-                <a href="portafolio/FantazyLabz-PortafolioBT3.jpg" title="El resultado final es un portafolio que no solo resalta los logros de BT Remodeling, sino que también facilita la presentación de sus proyectos a futuros clientes con un impacto duradero." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://bt-remodeling.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="portafolio/FantazyLabz-PortafolioFyaceros2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Fyaceros</h4>
-                <p>Trabajamos con Fyaceros para desarrollar un catálogo integral que resalta su amplia gama de productos y soluciones en acero.</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Trabajamos con Fyaceros para desarrollar un catálogo integral que resalta su amplia gama de productos y soluciones en acero." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://fyaceros.com/" title="Trabajamos con Fyaceros para desarrollar un catálogo integral que resalta su amplia gama de productos y soluciones en acero." class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="portafolio/FantazyLabz-PortafolioFyaceros3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Fyaceros</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://fyaceros.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="  portafolio/FantazyLabz-PortafolioFyaceros4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Fyaceros</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://fyaceros.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+    
 
             
 
-            
+    
 
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-   <!-- Stats Section -->
-<section id="stats" class="stats section">
-
-  <div class="container text-center"  data-aos-delay="100">
-
-    <div class="row gy-4 align-items-center justify-content-center">
-
-      <div class="col-lg-8">
-
-        <h3 class="fw-bold fs-2 mb-3">Nuestra Trayectoria</h3>
-        <p>
-          Fantazy Labz es una consultoría de software fundada hace más de tres años, especializada en el desarrollo de soluciones tecnológicas a medida.
-        </p>
-
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-lg-6">
-            <div class="stats-item d-flex justify-content-center">
-              <i class="bi bi-emoji-smile flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Clientes satisfechos</strong> <span>con nuestros servicios</span></p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-6">
-            <div class="stats-item d-flex justify-content-center">
-              <i class="bi bi-journal-richtext flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Proyectos</strong> <span>entregados de manera satisfactoria.</span></p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-6">
-            <div class="stats-item d-flex justify-content-center">
-              <i class="bi bi-headset flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="650" data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Horas de Desarrollo</strong> <span>de proyectos</span></p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-6">
-            <div class="stats-item d-flex justify-content-center">
-              <i class="bi bi-people flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Especialistas</strong> <span>en el entorno de desarrollo</span></p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
+       
 
         </div>
 
@@ -549,92 +465,10 @@
 
   </div>
 
-</section><!-- /Stats Section -->
 
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section dark-background">
 
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
-
-      <div class="container"  data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/fyaceros.png" class="testimonial-img" alt="">
-                <h3>Felipe Perez</h3>
-                <h4>Emprendedor</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>"Fantazy Labz captó exactamente lo que necesitábamos. Nos entregaron un sitio web rápido, bien optimizado y adaptable a cualquier dispositivo, lo cual es clave para nuestros clientes. Todo el proceso fue eficiente y el equipo fue siempre receptivo a nuestras ideas. Sin duda, hicieron el trabajo más fácil para nosotros."
-                  </span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/bandon.jpg" class="testimonial-img" alt="">
-                <h3>Brandon Trujillo</h3>
-                <h4>Constructor</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>"Desde que Fantazy Labz desarrolló nuestra página web, hemos notado un incremento en la interacción de los clientes y en nuestras ventas. Crearon un sitio visualmente atractivo y fácil de usar, lo cual ha ayudado a mejorar nuestra presencia en línea. El equipo fue muy profesional y entendió perfectamente nuestras necesidades comerciales."
-                  </span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/yamaha.png" class="testimonial-img" alt="">
-                <h3>Yamaha Rompoo</h3>
-                <h4>Empresa</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>"Trabajar con Fantazy Labz ha sido un alivio. No solo diseñaron un sitio hermoso y funcional, sino que ofrecen un soporte continuo que nos da tranquilidad. Cada actualización o cambio se ha hecho sin problemas, y eso es muy valioso para nosotros como negocio en crecimiento."</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
+   
 
 
     <!-- Contact Section -->
@@ -649,7 +483,7 @@
       <div class="container"  data-aos-delay="100">
 
         <div class="mb-4"  data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.0113597103564!2d-100.2673037240581!3d25.70404791098409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629535ce8f94c3%3A0xba69fa5445fb20b3!2sSierra%20Morena%20101%2C%20Francisco%20Garza%20Sada%2C%2066490%20San%20Nicol%C3%A1s%20de%20los%20Garza%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1726009349390!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14367.82105755791!2d-100.364337!3d25.8050499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629171201b5b95%3A0xfa74e255c47002dd!2sCristo%20Rey!5e0!3m2!1ses-419!2smx!4v1732623338482!5m2!1ses-419!2smx"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4">
@@ -659,7 +493,7 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Dirección</h3>
-                <p>Sierra Morena 101, Francisco Garza Sada, 66490 San Nicolás de los Garza, N.L.</p>
+                <p>Cobalto 1421, Pedregal del Topo Chico, 66061 Cdad. Gral. Escobedo, N.L.</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -731,15 +565,15 @@
               
             </a>
             <div class="footer-contact pt-3">
-              <p>Sierra Morena 101, Francisco Garza Sada, 66490 San Nicolás de los Garza, N.L.</p>
+              <p>Cobalto 1421, Pedregal del Topo Chico, 66061 Cdad. Gral. Escobedo, N.L.</p>
             
               <p class="mt-3"><strong>Phone:</strong> <span>+52 8134779998</span></p>
               <p><strong>Email:</strong> <span>proyectos@fantazylabz.tech</span></p>
             </div>
             <div class="social-links d-flex mt-4">
               <!--<a href=""><i class="bi bi-twitter-x"></i></a>-->
-              <a href="https://www.facebook.com/profile.php?id=61551452519077&locale=es_LA"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/fantazy_labz/"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.facebook.com/people/Parroquia-Cristo-Rey-Escobedo/100064349422919/?sk=photos_by&locale=es_LA"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/explore/locations/1045282775499954/parroquia-cristo-rey-escobedo/"><i class="bi bi-instagram"></i></a>
               <!--<a href=""><i class="bi bi-linkedin"></i></a>-->
             </div>
           </div>
@@ -784,7 +618,7 @@
 
     <div class="copyright">
       <div class="container text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Fantazy Labz</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Parroquia Cristo Rey</strong> <span>All Rights Reserved</span></p>
         <div class="credits">
           
         </div>
