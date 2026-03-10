@@ -1,0 +1,34 @@
+:root {
+  --font-title: "Itim", cursive;
+  --font-body: "Poppins", sans-serif;
+
+  --color-bg: #f7f1f2;
+  --color-surface: #fffafb;
+  --color-surface-alt: #f3e7ea;
+  --color-text: #351d24;
+  --color-muted: #72545c;
+  --color-brand: #7a1f37;
+  --color-brand-strong: #5c1629;
+  --color-accent: #c98a9a;
+  --color-white: #ffffff;
+  --color-primary: var(--color-brand);
+  --color-primary-strong: var(--color-brand-strong);
+  --color-bg-light: var(--color-surface-alt);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.85rem;
+  --radius-lg: 1.2rem;
+
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+
+  --shadow-soft: 0 10px 28px rgba(26, 29, 24, 0.1);
+  --shadow-hard: 0 16px 36px rgba(25, 30, 22, 0.16);
+
+  --header-height: 86px;
+  --transition-base: all 0.3s ease;
+}

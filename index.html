@@ -1,648 +1,436 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel=”canonical” href=”https://fantazylabz.com/index.html” />
-
-
+<html lang="es" class="scroll-smooth">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Parroquia Cristo Rey</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio oficial de la Parroquia Cristo Rey: horarios de misa, servicios pastorales, historia y contacto.">
+    <title>Parroquia Cristo Rey | Comunidad de Fe</title>
 
-  <!-- Favicons -->
-  <link href="logo.jpg" rel="icon">
-  <link href="logo.jpg" rel="apple-touch-icon">
+    <link rel="icon" type="image/png" href="assets/img/branding/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
- 
+    <link rel="stylesheet" href="assets/css/custom/tokens.css">
+    <link rel="stylesheet" href="assets/css/custom/base.css">
+    <link rel="stylesheet" href="assets/css/custom/layout.css">
+    <link rel="stylesheet" href="assets/css/custom/components.css">
+    <link rel="stylesheet" href="assets/css/custom/responsive.css">
 </head>
-
-<body class="index-page">
-
- <!-- Header -->
- <header id="header" class="header d-flex align-items-center fixed-top">
-  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-    <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-      <img src="logo (2).png" alt="">
-    </a>
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active">Inicio</a></li>
-        <li><a href="#about">Servicios</a></li>
-        <li><a href="#services">Grupos Parroquiales</a></li>
-        <li><a href="#portfolio">Celebraciones Eucristicas</a></li>
-        <li><a href="#contact">Contáctanos</a></li>
-      </ul>
-    </nav>
-   
-  </div>
-</header>
-
-<style>
-
-  body {
-    font-family: 'Itim';font-size: 22px;
-    background-color: #E8E8E8;
-}
-  .header {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    
-    width: 100%;
-    z-index: 1000;
-    
-  }
-
-  .header.fixed-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-
-  .header .logo img {
-    height: 100px;
-    margin-right: 10px;
-  }
-
-  .header .navmenu ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-  }
-
-  .header .navmenu ul li {
-    margin: 0 15px;
-  }
-
-  .header .navmenu ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
-  }
-
-  .header .navmenu ul li a:hover,
-  .header .navmenu ul li a.active {
-    color: #f9c74f;
-  }
-
-
-  /* Swiper */
-  .swiper-container {
-    width: 100%;
-    height: 100vh;
-  }
-
-  .swiper-slide {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .swiper-slide img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    position: absolute;
-    z-index: 1;
-  }
-
-  .swiper-slide h2 {
-    color: #fff;
-    font-size: 40px; /* Más grande para destacar */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    z-index: 2;
-    padding: 0 20px; /* Margen interno para evitar que el texto quede pegado */
-    line-height: 1.4; /* Mejor espacio entre líneas */
-    max-width: 90%; /* Limitar el ancho del texto */
-  }
-
-  @media (min-width: 768px) {
-    .swiper-slide h2 {
-      font-size: 4rem; /* Ajuste para pantallas más grandes */
-    }
-  }
-
-  .swiper-pagination {
-    bottom: 20px !important;
-  }
-</style>
-
-<main class="main">
-  <!-- Hero Section -->
-  <section id="hero" class="hero section dark-background" >
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide">
-          <img src="slider1.jpg" alt="">
-          <h2>“La comunidad parroquial es el corazón de la vida litúrgica; es el lugar privilegiado de la catequesis y la educación en la fe.” 
-            San Juan Pablo II
-            </h2>
-        </div>
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
-          <img src="slider2.jpg" alt="">
-          <h2>“La Iglesia es una comunidad de personas que creen en el Dios de Jesucristo y se comprometen a vivir en el mundo el mandamiento de la caridad que él nos dejó”
-            Benedicto XVI
-            </h2>
-        </div>
-        <!-- Slide 3 -->
-        <div class="swiper-slide">
-          <img src="slider3.jpg" alt="">
-          <h2>“La fe tiene una configuración necesariamente eclesial, se confiesa dentro del cuerpo de Cristo, como comunión real de los creyentes.” 
-            Papa Francisco (Lumen Fidei)
-            </h2>
-        </div>
-      </div>
-      <!-- Puntos de navegación -->
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
-</main>
-
-<!-- Scripts -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    new Swiper('.swiper-container', {
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-    });
-  });
-</script>
-
-
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container"  data-aos-delay="50">
-
-        <div class="row gy-4">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="nuestraigle.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 order-2 order-lg-1 content">
-            <h3>NUESTRA PARROQUIA</h3>
-            <p class="fst-italic" style="line-height: 2.5; margin-top: 30px;">
-              La Parroquia de Cristo Rey fue erigida canónicamente por el Sr. Arzobispo Adolfo Cardenal Suárez Rivera (+) el 21 de noviembre de 1998. Este importante acontecimiento marcó el inicio de una nueva comunidad de fe en la región. La parroquia forma parte del Decanato de Nuestra Señora de la Soledad, el cual pertenece a la Zona Pastoral VIII.
-              
-              Dentro de este contexto, la parroquia no solo actúa como un espacio de culto y oración, sino también como un punto de encuentro para la comunidad, ofreciendo servicios pastorales, celebraciones litúrgicas y programas de formación religiosa.
-              
-              Con el paso de los años, la Parroquia de Cristo Rey se ha convertido en un referente espiritual en la zona, atendiendo las necesidades de los fieles y promoviendo valores cristianos en sus actividades y servicios. Su arquitectura y diseño reflejan la dedicación de quienes la construyeron, consolidándola como un lugar especial para el encuentro personal y comunitario con el Señor.
-          </p>
-          
-            
-            
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-
-
-    <style>
-      .pastoral-card {
-        position: relative;
-        overflow: hidden;
-     
-        border-radius: 10px;
-      }
-    
-      .pastoral-card img {
-        width: 100%;
-        height: auto;
-        transition: transform 0.3s ease;
-      }
-    
-      .pastoral-card:hover img {
-        transform: scale(1.1);
-      }
-    
-      /* Nombre inicial siempre visible */
-      .pastoral-card .title {
-        font-family: 'Itim';
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 1.2rem;
-        font-weight: bold;
-        text-align: center;
-        z-index: 1;
-      }
-    
-      /* Información mostrada al hacer hover */
-      .pastoral-card .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        text-align: center;
-        padding: 10px;
-      }
-    
-      .pastoral-card:hover .overlay {
-        opacity: 1;
-      }
-    
-      .pastoral-card .overlay p {
-        color: white;
-        font-size: 1rem;
-        font-family: 'Itim';
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-      }
-    </style>
-    
-    <div class="container my-5">
-      <div class="row g-4">
-        <!-- Fila 1: 2 tarjetas -->
-        <div class="col-md-6">
-          <div class="pastoral-card">
-            <img src="pastoralcate.jpg" alt="Pastoral Catequética">
-            <div class="title">Pastoral Catequética</div>
-            <div class="overlay">
-              <p>La pastoral catequética es una labor fundamental dentro de la comunidad cristiana que tiene como objetivo principal fomentar el crecimiento espiritual de los fieles a través de la enseñanza de la fe y la formación integral en los valores del Evangelio. Su propósito es guiar a las personas en el conocimiento profundo de la Palabra de Dios, los sacramentos, la doctrina y la vida cristiana para que puedan vivir una fe activa y comprometida.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="pastoral-card">
-            <img src="pastorallit.jpg" alt="Pastoral Litúrgica">
-            <div class="title">Pastoral Litúrgica</div>
-            <div class="overlay">
-              <p>La pastoral litúrgica tiene como misión principal animar, coordinar y dar vida a las celebraciones litúrgicas de la comunidad cristiana. Su propósito es lograr que cada celebración sea una experiencia viva de fe, en la que todos los miembros de la comunidad participen de manera activa, consciente y plena.</p>
-            </div>
-          </div>
-        </div>
-       
-        
-        <div class="col-md-6">
-          <div class="pastoral-card">
-            <img src="pastoralfam.jpg" alt="Pastoral Familiar">
-            <div class="title">Pastoral Familiar</div>
-            <div class="overlay">
-              <p>La promoción de valores cristianos y el fortalecimiento del núcleo familiar son esenciales en el contexto de los desafíos actuales, marcados por cambios culturales, económicos y sociales que afectan profundamente la vida cotidiana. Esta misión está inspirada en el evangelio y busca construir familias sólidas que sirvan como base para una sociedad más justa y armoniosa.</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-6">
-          <div class="pastoral-card">
-            <img src="pastoraljuv.jpg" alt="Pastoral Familiar">
-            <div class="title">Pastoral Juvenil</div>
-            <div class="overlay">
-              <p>La pastoral vocacional es la acción de la Iglesia que tiene como finalidad fomentar, acompañar y discernir las vocaciones de cada persona en respuesta al llamado de Dios. Este servicio se orienta a todos los miembros de la comunidad cristiana, ayudándolos a descubrir y asumir su misión en la vida, ya sea en el sacerdocio, la vida consagrada, el matrimonio o la vida laical</p>
-            </div>
-          </div>
-        </div>
-
-         <!-- Fila 2: 2 tarjetas -->
-         <div class="col-md-6">
-          <div class="pastoral-card">
-            <img src="pastoralsoc.jpg" alt="Pastoral Social">
-            <div class="title">Pastoral Social</div>
-            <div class="overlay">
-              <p>La pastoral social tiene como misión fundamental ser la expresión concreta del amor cristiano hacia los más vulnerables, inspirada en el mandato evangélico de la solidaridad, la justicia y la caridad. Esta pastoral busca hacer presente el Reino de Dios a través de acciones solidarias que promuevan la dignidad de las personas, especialmente aquellas que viven en condiciones de pobreza, exclusión o sufrimiento.</p>
-            </div>
-          </div>
-        </div>
-
-          <!-- Fila 2: 2 tarjetas -->
-          <div class="col-md-6">
-            <div class="pastoral-card">
-              <img src="pastoralvoc.jpg" alt="Pastoral Social">
-              <div class="title">Pastoral Vocacional</div>
-              <div class="overlay">
-                <p>La pastoral vocacional es la acción organizada de la Iglesia que busca promover, acompañar y discernir las vocaciones en todos sus estados de vida: sacerdocio, vida consagrada, matrimonio y vida laical. Su objetivo principal es ayudar a las personas a descubrir el llamado de Dios y responder a él con generosidad y compromiso, integrando su vocación en la misión de la comunidad eclesial.
-  
-                </p>
-              </div>
-            </div>
-          </div>
-        
-        </div>
-      </div>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    
-
-
-
-
-    <div class="container content-section">
-      <div class="row align-items-center">
-        <!-- Text Section -->
-        <div class="col-lg-6 col-md-12">
-          <h2 class="content-title">Grupos Parroquiales</h2>
-          <ul>
-            <li class="list-item">Adoración Nocturna</li>
-            <li class="list-item">Alvernia</li>
-            <li class="list-item">Cáritas</li>
-            <li class="list-item">Catequistas</li>
-            <li class="list-item">Coros</li>
-            <li class="list-item">DEA</li>
-            <li class="list-item">Encuentros con Cristo</li>
-            <li class="list-item">Escuela de Pastoral</li>
-            <li class="list-item">Escuela Bíblica Arquidiocesana</li>
-            <li class="list-item">Liturgia</li>
-            <li class="list-item">Monaguillos</li>
-            <li class="list-item">Pequeños Hermanos de María</li>
-            <li class="list-item">Mision Católica Matrimonial</li>
-            <li class="list-item">Siloé</li>
-          </ul>
-        </div>
-        <!-- Image Section -->
-        <div class="col-lg-6 col-md-12 content-image">
-          <img src="catequetica.jpg" alt="Grupos Parroquiales">
-        </div>
-      </div>
-    </div>
-  
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      .content-section {
-        
-
-        padding: 40px 20px;
-      }
-      .content-title {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-      }
-      .list-item {
-        list-style: none;
-        padding: 5px 0;
-        font-size: 1.1rem;
-      }
-      .list-item::before {
-        content: '✓';
-        color: #6c757d;
-        margin-right: 10px;
-      }
-      .content-image img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-    </style>
-
-
-          
-
-  <!-- Call To Action Section -->
-<section id="call-to-action" class="call-to-action section dark-background">
-  <img src="misa.png" alt="" >
-  <div class="container">
-    <div class="row justify-content-center" data-aos="zoom-in" >
-      <!-- Columna 1 -->
-      <div class="col-md-6 text-center text-white">
-        <h4>Misa Diaria</h4>
-        <p>Lunes a Sábado 8:00 am y 7:00 pm.</p>
-        <p><i>* Los miércoles no hay misa de 7:00 pm.</i></p>
-      </div>
-      <!-- Columna 2 -->
-      <div class="col-md-6 text-center text-white">
-        <h4>Misa Dominical</h4>
-        <p>8:00 am</p>
-        <p>10:00 am Con niños</p>
-        <p>12:00 pm Por el pueblo</p>
-        <p>7:00 pm Con jóvenes</p>
-      </div>
-      <div class="col-md-6 text-center text-white">
-        <h4>Horarios de Oficina</h4>
-        <p>Lunes, martes, jueves y viernes </p>
-        <p>12:00 a 6:30 pm</p>
-        <p>* Miércoles cerrada.
-        </p>
-       
-      </div>
-    </div>
-  </div>
-</section>
-
-    
-
-            
-
-    
-
-       
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-
-   
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" >
-        <h2>Contacto</h2>
-        <p>Contactanos</p>
-      </div><!-- End Section Title -->
-
-      <div class="container"  data-aos-delay="100">
-
-        <div class="mb-4"  data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14367.82105755791!2d-100.364337!3d25.8050499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629171201b5b95%3A0xfa74e255c47002dd!2sCristo%20Rey!5e0!3m2!1ses-419!2smx!4v1732623338482!5m2!1ses-419!2smx"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex"  data-aos-delay="300">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Dirección</h3>
-                <p>Av. Platino  #1280
-Col. Pedregal del Topochico
-CP 66061
-Gral. Escobedo, N.L.</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex"  data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Llamanos</h3>
-                <p>+528183848009</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex"  data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email</h3>
-                <p>administracion@pcristoreyesc.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-<div class="col-lg-8">
-    <form action="https://formsubmit.co/administracion@pcristoreyesc.com" method="POST" class="php-email-form" >
-        <!-- Campo oculto para redirigir a la misma página -->
-        <input type="hidden" name="_redirect" value="https://pcristoreyesc.com/">
-        <div class="row gy-4">
-            <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-            </div>
-            <div class="col-md-6">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="Subject">
-            </div>
-            <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-            </div>
-            <div class="col-md-12 text-center">
-                <button type="submit" style="background-color: green; color: white; border: none;">Enviar Mensaje</button>
-            </div>
-        </div>
-    </form>
-</div>
-
-
-
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer dark-background">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              
+<body class="antialiased text-gray-800">
+
+    <!-- NAV BAR -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all" id="navbar">
+        <div class="layout-container h-24 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3 group" onclick="window.scrollTo(0,0)">
+                <div class="bg-[var(--color-primary)] text-white p-2 rounded-full shadow-lg">
+                    <i data-lucide="crown" class="w-6 h-6 text-white"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif font-bold text-2xl leading-none text-gray-800">Cristo Rey</span>
+                    <span class="text-xs font-bold tracking-widest uppercase text-gray-500">Parroquia</span>
+                </div>
             </a>
-            <div class="footer-contact pt-3">
-              <p>Av. Platino  #1280
-Col. Pedregal del Topochico
-CP 66061
-Gral. Escobedo, N.L.</p>
-            
-              <p class="mt-3"><strong>Phone:</strong> <span>+528183848009</span></p>
-              <p><strong>Email:</strong> <span>info@parroquiacristorey.com</span></p>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-8 items-center font-bold text-sm text-gray-600">
+                <a href="#horarios" class="hover:text-[var(--color-primary)] transition-colors uppercase">Horarios</a>
+                <a href="#servicios" class="hover:text-[var(--color-primary)] transition-colors uppercase">Servicios</a>
+                <a href="#historia" class="hover:text-[var(--color-primary)] transition-colors uppercase">Historia</a>
+                <a href="#pastorales" class="hover:text-[var(--color-primary)] transition-colors uppercase">Grupos</a>
+                <a href="#contacto" class="btn btn-primary ml-4">Contacto</a>
             </div>
-            <div class="social-links d-flex mt-4">
-              <!--<a href=""><i class="bi bi-twitter-x"></i></a>-->
-              <a href="https://www.facebook.com/people/Parroquia-Cristo-Rey-Escobedo/100064349422919/?sk=photos_by&locale=es_LA"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/explore/locations/1045282775499954/parroquia-cristo-rey-escobedo/"><i class="bi bi-instagram"></i></a>
-<a href="https://www.vatican.va/">
-    <img src="vatican-city.png" alt="Iglesia Icono" style="width:24px; height:24px;">
-</a>
-<a href="https://www.arquidiocesismty.org/ ">
-    <img src="actividad-logo.jpg" alt="Cruz Icono" style="width:24px; height:24px;">
-</a>
 
-              <!--<a href=""><i class="bi bi-linkedin"></i></a>-->
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Nuestro Sitio</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="index#hero"> Inicio</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index#about"> Servicios</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index#services"> Grupos Parroquiales</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index#portafolio"> Celebraciones Eucristicas</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index#contact"> Contáctanos</a></li>
-            </ul>
-          </div>
-
-          
-
-          
-
-    <div class="copyright">
-      <div class="container text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Parroquia Cristo Rey</strong> <span>All Rights Reserved</span></p>
-        <div class="credits">
-          
+            <!-- Mobile Toggle -->
+            <button class="md:hidden text-gray-600" id="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú de navegación">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
         </div>
-      </div>
-    </div>
+        <div class="layout-container md:hidden pb-4 hidden" id="mobile-menu">
+            <div class="flex flex-col gap-3 rounded-2xl border border-gray-100 bg-white p-4 text-sm font-bold uppercase text-gray-600 shadow-lg">
+                <a href="#horarios" class="hover:text-[var(--color-primary)] transition-colors">Horarios</a>
+                <a href="#servicios" class="hover:text-[var(--color-primary)] transition-colors">Servicios</a>
+                <a href="#historia" class="hover:text-[var(--color-primary)] transition-colors">Historia</a>
+                <a href="#pastorales" class="hover:text-[var(--color-primary)] transition-colors">Grupos</a>
+                <a href="#contacto" class="btn btn-primary justify-center">Contacto</a>
+            </div>
+        </div>
+    </nav>
 
-  </footer>
+    <!-- HERO SECTION: Recuperado de imagen_62d314.png -->
+    <header class="relative pt-32 pb-20 overflow-hidden bg-white">
+        <!-- Decoración fondo -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gray-50 -z-10 rounded-l-[100px] hidden lg:block"></div>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <div class="layout-container">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Columna Texto -->
+                <div class="z-10 order-2 lg:order-1 text-center lg:text-left">
+                    <div class="inline-block px-4 py-2 mb-6 text-xs font-bold tracking-widest text-amber-600 uppercase bg-amber-50 rounded-full border border-amber-100">
+                        Bienvenidos a Casa
+                    </div>
+                    <h1 class="font-serif text-5xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+                        Una Comunidad de <br/>
+                        <span class="italic">Fe y Esperanza</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed font-light">
+                        "Vengan a mí todos ustedes que están cansados y agobiados, y yo les daré descanso."
+                        <br/>
+                        <span class="font-bold text-gray-800 text-base mt-3 block">— Mateo 11:28</span>
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#horarios" class="btn btn-primary">
+                            <i data-lucide="calendar" class="mr-2 w-5 h-5"></i> Ver Misas
+                        </a>
+                        <a href="#pastorales" class="btn btn-outline">
+                            <i data-lucide="users" class="mr-2 w-5 h-5"></i> Ministerios
+                        </a>
+                    </div>
+                </div>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+                <!-- Columna Imágenes: Estilo Stacked/Rotado -->
+                <div class="order-1 lg:order-2 relative h-[500px] w-full hidden lg:block">
+                    <!-- Imagen Fondo (Rotada a la derecha) -->
+                    <div class="absolute right-0 top-0 w-3/4 h-3/4 bg-white p-2 rounded-2xl shadow-xl transform rotate-6 z-10 transition-transform hover:rotate-2">
+                        <img src="assets/img/hero/slider2.jpg" alt="Detalle Iglesia" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                    <!-- Imagen Frente (Rotada a la izquierda) -->
+                    <div class="absolute left-10 bottom-10 w-3/4 h-3/4 bg-white p-2 rounded-2xl shadow-2xl transform -rotate-3 z-20 transition-transform hover:rotate-0">
+                         <img src="assets/img/hero/slider1.jpg" alt="Fachada Frontal" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- HORARIOS SECTION (NUEVA) -->
+    <section id="horarios" class="section-padding bg-[var(--color-bg-light)]">
+        <div class="layout-container">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <span class="section-subtitle">Celebraciones Litúrgicas</span>
+                <h2 class="section-title">Horarios de Misa</h2>
+                <div class="h-1 w-24 mx-auto bg-[var(--color-primary)] rounded-full mt-4"></div>
+            </div>
 
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Misa Dominical -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="sun" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-4">Domingos</h3>
+                    <ul class="text-gray-600 space-y-3">
+                        <li class="border-b border-gray-100 pb-2">08:00 AM - Misa Matutina</li>
+                        <li class="border-b border-gray-100 pb-2">10:00 AM - Misa de Niños</li>
+                        <li class="border-b border-gray-100 pb-2">12:00 PM - Misa Solemne</li>
+                        <li class="font-semibold text-[var(--color-primary)]">06:00 PM - Misa de Jóvenes</li>
+                    </ul>
+                </div>
+
+                <!-- Misa Diaria -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="calendar-days" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-4">Entre Semana</h3>
+                    <ul class="text-gray-600 space-y-3">
+                        <li class="border-b border-gray-100 pb-2"><strong>Lunes a Sábado</strong></li>
+                        <li class="border-b border-gray-100 pb-2">07:00 AM - Eucaristía</li>
+                        <li class="border-b border-gray-100 pb-2">06:00 PM - Santo Rosario</li>
+                        <li class="text-sm italic pt-2">Jueves Eucarístico: 5:00 PM</li>
+                    </ul>
+                </div>
+
+                <!-- Confesiones -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="heart-handshake" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-4">Confesiones</h3>
+                    <ul class="text-gray-600 space-y-3">
+                        <li class="border-b border-gray-100 pb-2"><strong>Jueves</strong><br>5:00 PM - 6:00 PM</li>
+                        <li class="border-b border-gray-100 pb-2"><strong>Sábados</strong><br>4:00 PM - 6:00 PM</li>
+                        <li class="text-sm italic pt-2">O solicitar cita en oficina</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS SECTION (NUEVA) -->
+    <section id="servicios" class="section-padding bg-white">
+        <div class="layout-container">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img src="assets/img/sections/misa.png" alt="Servicios parroquiales" class="rounded-xl shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-lg shadow-xl border-l-4 border-[var(--color-primary)] max-w-xs hidden md:block">
+                        <p class="font-bold text-gray-800">Oficina Parroquial</p>
+                        <p class="text-sm text-gray-500">Lun - Vie: 9:00 AM - 1:00 PM <br>y 4:00 PM - 7:00 PM</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="section-subtitle">Sacramentos y Trámites</span>
+                    <h2 class="section-title">Servicios Pastorales</h2>
+                    <p class="text-gray-600 mb-8">
+                        Acompañamos a nuestra comunidad en cada etapa de su vida cristiana. Acércate a la oficina para agendar o solicitar información.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="mt-1"><i data-lucide="check-circle-2" class="text-[var(--color-primary)] w-6 h-6"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg">Bautismos</h4>
+                                <p class="text-gray-500 text-sm">Pláticas pre-bautismales el segundo sábado del mes. Ceremonias comunitarias los domingos.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1"><i data-lucide="check-circle-2" class="text-[var(--color-primary)] w-6 h-6"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg">Matrimonios</h4>
+                                <p class="text-gray-500 text-sm">Trámite con 6 meses de anticipación. Entrevistas con el párroco previa cita.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1"><i data-lucide="check-circle-2" class="text-[var(--color-primary)] w-6 h-6"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg">Unción de Enfermos</h4>
+                                <p class="text-gray-500 text-sm">Disponible para visitas domiciliarias u hospitales. Llamar a oficina para urgencias.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTORIA SECTION (Conservada) -->
+    <section id="historia" class="section-padding bg-[var(--color-bg-light)] relative overflow-hidden">
+        <div class="layout-container">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Columna Texto -->
+                <div>
+                    <span class="section-subtitle">Fundada en 1998</span>
+                    <h2 class="section-title">Nuestra Parroquia</h2>
+                    
+                    <div class="space-y-5 text-gray-600 text-justify leading-relaxed">
+                        <p>
+                            La Parroquia de Cristo Rey fue erigida canónicamente por el <strong>Sr. Arzobispo Adolfo Cardenal Suárez Rivera (+)</strong> el <strong>21 de noviembre de 1998</strong>. Este importante acontecimiento marcó el inicio de una nueva comunidad de fe en la región, consolidándose como un faro espiritual para las familias del sector.
+                        </p>
+                        <p>
+                            Nuestra comunidad forma parte del <strong>Decanato de Nuestra Señora de la Soledad</strong>, perteneciente a la <strong>Zona Pastoral VIII</strong>. No somos solo un edificio de culto, sino un punto de encuentro vivo donde se ofrecen servicios pastorales, celebraciones litúrgicas y programas de formación integral.
+                        </p>
+                        <p>
+                            Con el paso de los años, Cristo Rey se ha convertido en un referente espiritual, atendiendo las necesidades de los fieles y promoviendo los valores del Evangelio.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Columna Imagen -->
+                <div class="relative group">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl transform rotate-2 transition-all duration-500 z-10">
+                        <img src="assets/img/sections/nuestraigle.jpg" 
+                             alt="Interior Parroquia" 
+                             class="w-full h-auto object-cover">
+                    </div>
+                    <!-- Borde Decorativo -->
+                    <div class="absolute inset-0 border-4 border-[var(--color-primary)] rounded-2xl transform -rotate-2 z-0 scale-95 translate-x-4 translate-y-4 opacity-20"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PASTORALES GRID (Conservada) -->
+    <section id="pastorales" class="section-padding bg-white">
+        <div class="layout-container">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <span class="section-subtitle">Vida Comunitaria</span>
+                <h2 class="section-title">Nuestros Grupos</h2>
+                <p class="text-gray-500 text-lg">
+                    Descubre los grupos donde puedes servir, convivir y crecer espiritualmente.
+                </p>
+            </div>
+
+            <div class="pastoral-grid">
+                
+                <!-- Card 1 -->
+                <article class="pastoral-card">
+                    <img src="assets/img/pastorales/pastoralcate.jpg" alt="Catequesis" class="pastoral-bg">
+                    <div class="pastoral-overlay">
+                        <span class="pastoral-label">Pastoral Catequética</span>
+                        <div class="pastoral-desc">
+                            Formación esencial en la fe para niños y jóvenes. Preparación para sacramentos.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="pastoral-card">
+                    <img src="assets/img/pastorales/pastorallit.jpg" alt="Liturgia" class="pastoral-bg">
+                    <div class="pastoral-overlay">
+                        <span class="pastoral-label">Pastoral Litúrgica</span>
+                        <div class="pastoral-desc">
+                            Servicio en el altar: Lectores, Monaguillos, Coros y Ministros Extraordinarios.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="pastoral-card">
+                    <img src="assets/img/pastorales/pastoraljuv.jpg" alt="Jóvenes" class="pastoral-bg">
+                    <div class="pastoral-overlay">
+                        <span class="pastoral-label">Pastoral Juvenil</span>
+                        <div class="pastoral-desc">
+                            Un espacio dinámico para jóvenes, con retiros, horas santas y convivencia fraterna.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="pastoral-card">
+                    <img src="assets/img/pastorales/pastoralsoc.jpg" alt="Ayuda Social" class="pastoral-bg">
+                    <div class="pastoral-overlay">
+                        <span class="pastoral-label">Pastoral Social</span>
+                        <div class="pastoral-desc">
+                            El brazo amoroso de la Iglesia. Banco de alimentos y apoyo a familias vulnerables.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="pastoral-card">
+                    <img src="assets/img/pastorales/pastoralfam.jpg" alt="Familia" class="pastoral-bg">
+                    <div class="pastoral-overlay">
+                        <span class="pastoral-label">Pastoral Familiar</span>
+                        <div class="pastoral-desc">
+                            Acompañamiento a matrimonios, pláticas pre-matrimoniales y fortalecimiento familiar.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="pastoral-card">
+                    <img src="assets/img/pastorales/pastoralvoc.jpg" alt="Vocacional" class="pastoral-bg">
+                    <div class="pastoral-overlay">
+                        <span class="pastoral-label">Pastoral Vocacional</span>
+                        <div class="pastoral-desc">
+                            Oración y discernimiento para quienes sienten el llamado a la vida sacerdotal.
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section-padding contact-section">
+        <div class="layout-container">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <span class="section-subtitle">Contáctanos</span>
+                <h2 class="section-title">Estamos para atenderte</h2>
+                <p class="text-gray-600 text-lg">
+                    Si necesitas información sobre sacramentos, horarios o atención parroquial, puedes comunicarte con nosotros o visitarnos en oficina.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-panel">
+                    <img src="assets/img/social/social.jpg" alt="Comunidad parroquial" class="rounded-2xl shadow-xl mb-6 w-full h-72 object-cover">
+                    <h3 class="font-serif text-2xl font-bold text-gray-900 mb-3">Atención cercana para la comunidad</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Nuestro equipo parroquial puede orientarte en bautismos, matrimonios, pláticas, celebraciones especiales y acompañamiento espiritual.
+                    </p>
+                    <div class="contact-cta">
+                        <a href="tel:+525551234567" class="btn btn-primary">
+                            <i data-lucide="phone" class="w-5 h-5"></i> Llamar ahora
+                        </a>
+                        <a href="mailto:contacto@cristorey.org" class="btn btn-outline">
+                            <i data-lucide="mail" class="w-5 h-5"></i> Enviar correo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-panel">
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-900 mb-1">Dirección</h4>
+                            <p class="text-gray-600">Calle Principal #123, Colonia Centro</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i data-lucide="clock-3" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-900 mb-1">Horario de oficina</h4>
+                            <p class="text-gray-600">Lunes a viernes de 9:00 AM a 1:00 PM y de 4:00 PM a 7:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-900 mb-1">Teléfono</h4>
+                            <p class="text-gray-600">(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-900 mb-1">Correo</h4>
+                            <p class="text-gray-600">contacto@cristorey.org</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white border-t border-gray-800">
+        <div class="layout-container py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4 text-[var(--color-primary)]">
+                        <i data-lucide="crown" class="w-6 h-6"></i>
+                        <span class="font-bold text-xl text-white">CRISTO REY</span>
+                    </div>
+                    <p class="text-gray-400 text-sm max-w-sm">
+                        Parroquia perteneciente a la Zona Pastoral VIII de la Arquidiócesis. Caminando juntos en la fe y la esperanza.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-white">Enlaces Rápidos</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#horarios" class="hover:text-[var(--color-primary)] transition">Horarios de Misa</a></li>
+                        <li><a href="#servicios" class="hover:text-[var(--color-primary)] transition">Servicios</a></li>
+                        <li><a href="#pastorales" class="hover:text-[var(--color-primary)] transition">Grupos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-white">Contacto</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex gap-2"><i data-lucide="phone" class="w-4 h-4"></i> (555) 123-4567</li>
+                        <li class="flex gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i> Calle Principal #123</li>
+                        <li class="flex gap-2"><i data-lucide="mail" class="w-4 h-4"></i> contacto@cristorey.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-xs">
+                &copy; 2026 Parroquia Cristo Rey. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Funcionalidad Básica -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="assets/js/app.js"></script>
 </body>
-
 </html>
