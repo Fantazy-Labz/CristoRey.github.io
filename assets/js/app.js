@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const contactLinks = {
+    phone: "+528183848009",
+    email: "administracion@pcristoreyesc.com",
+  };
+
   const mobileMenuButton = document.querySelector("#mobile-menu-button");
   const mobileMenu = document.querySelector("#mobile-menu");
 
@@ -33,6 +38,17 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     revealElements.forEach((el) => observer.observe(el));
+  }
+
+  const callNowButton = document.querySelector("#call-now-button");
+  const sendEmailButton = document.querySelector("#send-email-button");
+
+  if (callNowButton) {
+    callNowButton.setAttribute("href", `tel:${contactLinks.phone}`);
+  }
+
+  if (sendEmailButton) {
+    sendEmailButton.setAttribute("href", `mailto:${contactLinks.email}`);
   }
 
   if (window.lucide && typeof window.lucide.createIcons === "function") {
