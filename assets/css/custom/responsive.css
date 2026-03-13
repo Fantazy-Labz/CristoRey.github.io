@@ -28,6 +28,35 @@
 
   .contact-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-panel {
+    padding: 1.5rem;
+  }
+
+  .contact-community-image {
+    height: 15rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .contact-community-title {
+    font-size: clamp(1.4rem, 4.5vw, 1.75rem);
+    line-height: 1.25;
+  }
+
+  .contact-item p {
+    overflow-wrap: anywhere;
+  }
+
+  .contact-cta {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .contact-cta .btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .group-list {
@@ -67,6 +96,30 @@
 
   .map-wrap iframe {
     height: 260px;
+  }
+
+  .contact-panel {
+    padding: 1.15rem;
+    border-radius: 1rem;
+  }
+
+  .contact-community-image {
+    height: 12rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-item {
+    gap: 0.75rem;
+    padding: 0.8rem 0;
+  }
+
+  .contact-item-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .contact-item h4 {
+    font-size: 1rem;
   }
 }
 
