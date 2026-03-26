@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const contactLinks = {
     phone: "+528183848009",
-    email: "administracion@pcristoreyesc.com",
+    email: "cristorey.esc@arquidiocesismty.org",
   };
 
   const mobileMenuButton = document.querySelector("#mobile-menu-button");
